@@ -24,7 +24,18 @@
 
 ## Create a new Conda environment for this assignment.
 
-* This can be done directly in VSCode
+* This can be done in Anaconda Navigator
+  * Open Anaconda Navigator. (Windows - Start - Anaconda 3 - Anaconda Navigator
+  * Anaconda Navigator - Environments
+  * Click on Create at the bottom.
+  * Name: Basics Packages: make sure Python is checked and use the latest version (on my machine it's 3.8)
+  * Click Create.
+  * Click on Home.
+  * Click on Install on the Jupyter Notebook tile.
+  * You should now be able to start a Jupyter Notebook using Anaconda Navigator in the Home tab with the environment set to Basics. If you check your start menu in Windows, you should also see a new option to start a Jupyter Notebook using the Basics environment.
+  * Here is some information about working with Python environments in VSCode: https://code.visualstudio.com/docs/python/environments
+  * You should be able to switch to your new Conda environment in VSCode by going to the Command Pallet (Ctrl-Shift-P) and typing Python:Select and choosing Select Interpreter. Select the environment you want to use.
+* (These are some older instructions. I'm leaving these here in case you're interested to see how I did this in VSCode in the past. I think it's easier using the instructions for Anaconda Navigator above.) This can be done directly in VSCode
   * Open a new terminal in VSCode.
   * If you know the packages you will use for the project, you can install the packages at the same time you create the new environment using Conda. For this assignment we will install ipykernel so we can add the new environment to Jupyter Notebook.
   * In the terminal window run the command `conda -V` to check Conda is installed and is in your path.
@@ -71,3 +82,4 @@
 * To remove the environment from your Jupyter Notebooks run the code `jupyter kernelspec uninstall Basics`.
 * Get a list of the environments in Conda run `conda env list`.
 * To delete an environment and everything in it run `conda env remove --name Basics`.
+* You can also remove an environment in Anaconda Navigator. Anaconda Navigator - Environments - Select the environment you want to remove - Click Remove at the bottom.
